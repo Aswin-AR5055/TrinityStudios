@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trinity Studios</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar {
+      background-color: #000 !important;
+    }
+    .hero {
+      height: 100vh;
+      background: url("images/hero-bg.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 0 2px 5px rgba(0,0,0,.7);
+    }
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+    .game-card img {
+      border-radius: 12px;
+    }
+    footer {
+      background: #000;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Trinity Studios</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#games">Games</a></li>
+          <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero text-center">
+    <div>
+      <h1>Welcome to Trinity Studios</h1>
+      <p class="lead">Crafting the Wild West in Roblox</p>
+      <a href="#games" class="btn btn-danger btn-lg mt-3">Explore Our Game</a>
+    </div>
+  </section>
+
+  <!-- Games Section -->
+  <section id="games" class="py-5 container">
+    <h2 class="text-center mb-4">Our Game</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6 game-card text-center">
+        <img src="images/game-thumb.jpg" alt="Game Thumbnail" class="img-fluid mb-3">
+        <h3>Roblox: Wild Frontiers</h3>
+        <p>Experience the untamed West like never before in Roblox. Saddle up and ride out!</p>
+        <a href="#" class="btn btn-outline-light">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section id="news" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="text-center mb-4">Latest News</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Devlog #1</h5>
+          <p>Our first sneak peek into the world of Wild Frontiers...</p>
+          <a href="#" class="text-danger">Read more</a>
+        </div>
+        <div class="col-md-4">
+          <h5>Trailer Coming Soon</h5>
+          <p>We’re hard at work on the cinematic trailer. Stay tuned!</p>
+          <a href="#" class="text-danger">Read more</a>
+        </div>
+        <div class="col-md-4">
+          <h5>Behind the Scenes</h5>
+          <p>Meet the devs making Trinity Studios possible...</p>
+          <a href="#" class="text-danger">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 container">
+    <h2 class="text-center mb-4">About Us</h2>
+    <p class="text-center">Trinity Studios is a passionate indie team creating unforgettable worlds in Roblox. With a love for immersive storytelling and engaging gameplay, our mission is to bring the Wild West to life for players everywhere.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form class="mx-auto" style="max-width:600px;">
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" placeholder="Your Name">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" placeholder="Your Email">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Message</label>
+          <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-danger w-100">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Trinity Studios. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
