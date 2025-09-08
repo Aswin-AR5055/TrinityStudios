@@ -31,6 +31,17 @@ body img:hover {
     box-shadow: 0 15px 35px rgba(0,0,0,0.5);
 }
 
+.fade-out {
+     animation: fadeOut 1s forwards;
+    }
+
+    @keyframes fadeOut {
+        to {
+            opacity: 0;
+            transform: scale(0.9); /* optional: shrink slightly */
+        }
+    }
+
 /* Fade-in keyframes */
 @keyframes fadeIn {
     to {
