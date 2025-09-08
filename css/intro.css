@@ -1,0 +1,46 @@
+/* Body styling */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Logo styling */
+body img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.4s, box-shadow 0.4s;
+
+    /* Animation */
+    opacity: 0; /* start invisible */
+    animation: fadeIn 1s ease forwards; /* fade-in effect */
+    animation-delay: 2s; /* wait 2 seconds before starting */
+}
+
+/* Hover effect for logo */
+body img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+/* Fade-in keyframes */
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* end fully visible */
+    }
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    body img {
+        max-width: 180px;
+    }
+}
